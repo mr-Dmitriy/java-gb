@@ -1,3 +1,11 @@
+/**
+ *  Java 1. HomeWork 1
+ *
+ * @author PrikhodchenkoDO
+ * @version 12.01.2022
+ */
+
+
 package lesson01;
 import java.util.Scanner;
 
@@ -10,11 +18,11 @@ public class HomeWorkApp {
         compareNumbers();
     }
 
-    public static void printThreeWords() {
+    static void printThreeWords() {
         System.out.println("Orange\nBanana\nApple");
     }
 
-    public static void checkSumSign() {
+    static void checkSumSign() {
         int a = 0;
         int b = 0;
         Scanner sc = new Scanner(System.in);
@@ -25,11 +33,9 @@ public class HomeWorkApp {
         System.out.println(((a + b) >= 0)? "Положительная" : "Отрицательная");
     }
 
-    public static void printColor() {
+    static void printColor() {
 
         Scanner sc = new Scanner(System.in);
-        String Cont = null;
-        do{
             int value = 0;
             System.out.println("value = ");
             value = sc.nextInt();
@@ -44,15 +50,10 @@ public class HomeWorkApp {
                 System.out.println("GREEN");
             }
 
-            System.out.println("Repeat game? Yes - y, No - n");
-            Cont = sc.next();
-        }while (Cont.equals("y"));
     }
 
-    public static void compareNumbers() {
+     static void compareNumbers() {
         Scanner sc = new Scanner(System.in);
-        String Cont = null;
-        do{
             int a = 0;
             int b = 0;
             System.out.println("a = ");
@@ -60,9 +61,6 @@ public class HomeWorkApp {
             System.out.println("b = ");
             b = sc.nextInt();
             System.out.println( a >= b ? "a >= b" : "a < b");
-            System.out.println("Repeat game? Yes - y, No - n");
-            Cont = sc.next();
-        }while (Cont.equals("y"));
     }
 
 }
