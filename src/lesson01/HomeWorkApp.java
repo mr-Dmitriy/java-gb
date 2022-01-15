@@ -7,7 +7,7 @@
 
 
 package lesson01;
-
+import java.util.Scanner;
 
 public class HomeWorkApp {
 
@@ -23,13 +23,23 @@ public class HomeWorkApp {
     }
 
     static void checkSumSign() {
-        int a = 2;
-        int b = 3;
+        int a = 0;
+        int b = 0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("a = ");
+        a = sc.nextInt();
+        System.out.println("b = ");
+        b = sc.nextInt();
         System.out.println(((a + b) >= 0)? "Положительная" : "Отрицательная");
     }
 
     static void printColor() {
-            int value = 5;
+
+        Scanner sc = new Scanner(System.in);
+            int value = 0;
+            System.out.println("value = ");
+            value = sc.nextInt();
+
             if ( value <= 0 ) {
                 System.out.println("RED");
             }
@@ -39,11 +49,17 @@ public class HomeWorkApp {
             else if ( value > 100 ) {
                 System.out.println("GREEN");
             }
+
     }
 
      static void compareNumbers() {
-            int a = 5;
-            int b = 7;
+        Scanner sc = new Scanner(System.in);
+            int a = 0;
+            int b = 0;
+            System.out.println("a = ");
+            a = sc.nextInt();
+            System.out.println("b = ");
+            b = sc.nextInt();
             System.out.println( a >= b ? "a >= b" : "a < b");
     }
 
