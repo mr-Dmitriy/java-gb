@@ -2,7 +2,7 @@
  *  Java 1. HomeWork 2
  *
  * @author PrikhodchenkoDO
- * @version **.01.2022
+ * @version 16.01.2022
  */
 
 package lesson02;
