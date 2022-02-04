@@ -11,9 +11,9 @@ class Lesson7HomeWork {
     public static void main(String[] args) {
 
         Cat[] cats = {
-            new Cat( "Murzik", 15),
-            new Cat( "Barsik", 20),
-            new Cat( "Vasya", 25),
+                new Cat( "Murzik", 15),
+                new Cat( "Barsik", 20),
+                new Cat( "Vasya", 25),
         };
 
         for(Cat cat : cats) {
@@ -42,9 +42,12 @@ class Cat {
         this.appetite = appetite;
         this.isFull = false;
     }
+    public int getAppetite() {
+        return appetite;
+    }
 
     void eat(Plate plate) {
-        if(plate.getFood() >= appetite && !isFull){
+        if( plate.getFood() >= appetite && !isFull ){
             plate.decreaseFood(appetite);
             isFull = true;
         }
@@ -66,8 +69,13 @@ class Plate {
         return food;
     }
 
-    public void decreaseFood(int food) {
-        this.food -= food;
+    boolean decreaseFood(int sizeOfAppetite) {
+        if (food >= sizeOfAppetite){
+            food -= sizeOfAppetite;
+            return true;
+        } else {
+            return false;
+        }
     }
 
     void addFood(int food) {
